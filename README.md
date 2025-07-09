@@ -25,7 +25,7 @@ Sentiment classification on movie reviews using a Simple RNN model trained on tr
 
 ## 🚀 Model Demo
 
-🔗 [Live Model Here]((https://abhinandan12345-simplemoviesentimentpredictor.hf.space/?__theme=system&deep_link=MfRyFAgZHP4))
+🔗 [Live Model Here](https://abhinandan12345-simplemoviesentimentpredictor.hf.space/?__theme=system&deep_link=MfRyFAgZHP4)
 
 ---
 
