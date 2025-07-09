@@ -1,13 +1,44 @@
-# MovieSentimentClassification 📺
-About **movie sentiment classification**: Trained a simple RNN model on 'transformer generated embeddings. 
+# 🎬 MovieSentimentClassification
 
-## Summary
-- The dataset used was [IMDB Review](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews), which is a balanced dataset comprising of **~50k** movie reviews.
-**Note**: The encoder generated embeddings through its self text cleaning mechanisms. 
-- The dataset was transformed into meaningful word embeddings of `(384, )` dimensions using `SetenceTransformer`'s `all-MiniLM-L6-v2` (which is a distilled version of `BERT`), then partitioned into training and test sets.
-- A `SimpleRNN` architecture was used with `Drouput` layers at rate **0.2**.
-- The model was trained for 50 epochs.
+Sentiment classification on movie reviews using a Simple RNN model trained on transformer-generated embeddings.
 
-## Conclusion
-- The accuracy achieved was **~90%**, along with `val_accuracy` **~82%**
-- The model can be found live [here](https://abhinandan12345-simplemoviesentimentpredictor.hf.space/?__theme=system&deep_link=MfRyFAgZHP4). 
+---
+
+## 🧾 Summary
+
+- **Dataset**: [IMDB Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews), a balanced dataset of ~50,000 movie reviews.
+- **Embeddings**: Used [`SentenceTransformer`](https://www.sbert.net/) with the `all-MiniLM-L6-v2` model (a distilled version of BERT) to generate 384-dimensional embeddings.
+- **Model**: A `SimpleRNN` architecture with `Dropout` layers (dropout rate = 0.2).
+- **Training**: 
+  - Split into training and test sets.
+  - Trained for **50 epochs**.
+- **Note**: The transformer handled basic text cleaning internally while generating embeddings.
+
+---
+
+## 📈 Results
+
+- **Training Accuracy**: ~90%
+- **Validation Accuracy**: ~82%
+
+---
+
+## 🚀 Model Demo
+
+🔗 [Live Model Here]((https://abhinandan12345-simplemoviesentimentpredictor.hf.space/?__theme=system&deep_link=MfRyFAgZHP4))
+
+---
+
+## 📁 Files in Repo
+
+- `notebook.ipynb`: Full implementation and training workflow.
+- `RNNMODEL.keras`: Trained model file.
+- `requirements.txt`: Dependencies for replicating the environment.
+
+---
+
+## 📌 Requirements
+
+Install dependencies using:
+```bash
+pip install -r requirements.txt
